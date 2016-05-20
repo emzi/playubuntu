@@ -1,0 +1,123 @@
+<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script>
+
+function ch_bgcolor(c) {
+document.body.style.background=c;
+}
+
+function ch_fgcolor(c) {
+document.body.style.color=c;
+}
+
+function ch_size(i) {
+switch(i.selectedIndex) {
+case 0:
+document.body.style.fontSize='medium';
+i.style.fontSize='medium';
+break;
+case 1:
+document.body.style.fontSize='large';
+i.style.fontSize='large';
+break;
+case 2:
+document.body.style.fontSize='x-large';
+i.style.fontSize='x-large';
+break;
+case 3:
+document.body.style.fontSize='small';
+i.style.fontSize='small';
+break;
+}
+i.blur();
+}
+
+</script>
+<style>
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/Pfont-Regular.ttf');
+    font-weight: normal;
+    font-style: normal
+}
+body {
+font-family: 'pfont';
+}
+.col {
+border: 1px solid #000;
+text-decoration: none;
+}
+.col_box {
+border: 1px solid #000;
+color: #000;
+background: #bbb;
+padding-top: 3px;
+padding-bottom: 3px;
+text-align: center;
+}
+</style>
+</head>
+<body dir="rtl" style="background: #fff; color: #000">
+<div  class="col_box">
+درشتی متن:
+<select onchange="ch_size(this);">
+<option>
+معمولی
+<option>
+درشت
+<option>
+خیلی درشت
+<option>
+کوچک
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+رنگ متن: 
+<a href="javascript:void(0);" class="col" style="background: #153089;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #892C14;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #ffffff;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #000000;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+رنگ زمینه: 
+<a href="javascript:void(0);" class="col" style="background: #FFDA99;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #CCF0FF;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #F4FFD9;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #F3E5FF;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #999999;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #ffffff;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #000000;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html">بازگشت&nbsp;به&nbsp;فهرست&nbsp;مقالات</a>
+</div>
+<h2 align="center">
+GNU GPL و رویای آمریکایی
+</h2>
+بوسیلهٔ Bradley M. Kuhn<br />
+<br />
+وقتی من در مدرسهٔ ابتدایی بودم، درست اینجا در ایالات متحدهٔ آمریکا، من آموخته بودم که کشور ما «سرزمین فرصت» بود. آموزگاران من به من گفتند که کشور من استثنایی بود، زیرا هرکسی با یک ایدهٔ خوب و یک محرک برای انجام کار خوب میتوانست یک زندگی بسازد، و همچنین موفق باشد. آنها آنرا «رویای آمریکایی» (American Dream) نامیدند.<br />
+<br />
+چه چیزی اساس «رویای آمریکایی» بود؟ آن برابری بود — همه کس در جامعهٔ ما بخت یکسانی برای انتخاب راه خودش داشت. من میتوانستم هر مسیر حرفه ای ای را که میخواستم داشته باشم، و اگر سخت کار میکردم، من موفق میبودم.<br />
+<br />
+مشخص شد که من استعدادهایی برای کار با کامپیوترها داشتم — بطور خاص، نرم افزار کامپیوتر. تعلیم داده شده با «رویای آمریکایی»، من هر آنچه میتوانستم دربارهٔ نرم افزار رایانه آموختم. من بخت خودم را بر موفقیت خواستم.<br />
+باوجود آن من به سرعت دریافتم، که در خیلی موارد، همهٔ بازیکنان در میدان نرم افزار رایانه برابر نبودند. در زمانیکه من وارد میدان شدم، کمپانیهای بزرگی همچون میکروسافت گرایش به کنترل مقدار زیادی از فن آوری داشتند. و، آن فن آوری تحت توافقهای مجوزی در دسترس من بود که مرا از مطالعه و یادگرفتن از آن ممنوع میکردند. من کاملا از دیدن کد منبع برنامهٔ نرم افزار نهی شده بودم.<br />
+<br />
+من دریافتم، که کسانی با پول بسیار زیاد میتوانستند مجوزهای متفاوتی را مذاکره کنند. اگر آنها بقدر کافی میپرداختند، آنها میتوانستند اجازهٔ مطالعه و یادگرفتن از کد منبع را بگیرند. نوعا، چنان مجوزهایی هزاران دلار هزینه داشتند، و بخاطر جوان بودن و نسبتا فقیر بودن، من اقبالی نداشتم.<br />
+<br />
+پس از صرف کردن سالهای اولیه ام یک خورده لگد مال شده بوسیلهٔ ناتوانیم در یادگیری بیشتر در تجارت نرم افزار، من سرانجام بدنهٔ دیگری از نرم افزار را کشف کردم که به من اجازه داد مطالعه کنم و یاد بگیرم. این نرم افزار تحت مجوزی منتشر شده بود که GNU General Public License نامیده میشد. بجای محدود کردن آزادی من برای مطالعه و آموختن از آن، این مجوز مخصوصا برای اجازه دادن من برای مطالعه طراحی شده بود. مجوز اطمینان داد که بدون توجه به آنچه که برای نسخه های عمومی نرم افزار رخ میدهد، من همیشه قادر به مطالعهٔ کد منبع آن خواهم بود.<br />
+<br />
+من به سرعت مسیر حرفه ای خودم را حول این نرم افزار ساختم. من مقدار زیادی برای پیکربندی، نصب، مدیریت، و آموختن دربارهٔ آن نرم افزار کار انجام دادم. به لطف GNU GPL، من همیشه دانستم که من میتوانم در تجارت خود رقابتگر باقی بمانم، زیرا من همیشه قادر به آموختن به آسانی دربارهٔ نوآوری ها به محض اینکه آنها تولید میشدند خواهم بود. این به من یک توانایی بی نظیر برای اینکه خودم نوآوری بکنم داد. من توانستم به سرعت نوآوری کنم، و کارفرماهایم را تحت تاثیر قرار دهم. من حتی قادر به شروع تجارت مشاورهٔ خودم بودم. تجارت خودم! قلهٔ رویای آمریکایی!<br />
+<br />
+بنابراین، من هفتهٔ گذشته کاملا شگفت زده شدم وقتی یک نایب رییس در میکروسافت اشاره کرد که GNU GPL با رویای آمریکایی مخالف است.<br />
+<br />
+GNU GPL مخصوصا برای تضمین کردن آنکه به تمام نوآوران فن آوری، برنامه نویسان، و کاربران نرم افزار جای پای برابری داده میشود طراحی شده است. به هر دانش آموز دبیرستان، پیمانکار مستقل، تجارتهای کوچک، و شرکتهای بزرگ فرصت یکسانی برای نوآوری داده شده است. ما همه مسابقه را از نقطهٔ یکسانی آغاز میکنیم. افرادی با فهم عمیق از نرم افزار و توانایی ای برای بکار انداختن خوب آن برای دیگران بیشترین احتمال موفقیت را دارند، و آنها موفق میشوند.<br />
+<br />
+آن دقیقا چیزیست که رویای آمریکایی دربارهٔ آن است، حداقل طوری که من آنرا در مدرسهٔ ابتدایی یاد گرفتم. من امیدوارم که ما اجازه نخواهیم داد میکروسافت و دیگران تعریف را تغییر دهند.<br />
+<br />
+----------------------------------------<br />
+<br />
+کپی رایت ۲۰۰۱ - Bradley M. Kuhn<br />
+کپی و توزیع لفظ به لفظ از تمامی این مقاله درسراسر جهان اجازه داده شده است، بدون حق التالیف، در هر رسانه ای، با شرط اینکه این اعلان، و اعلان کپی رایت، حفظ شده باشند.<br />
+<br />
+بروزآوری: 2007/06/19 00:03:00<br />
+<center><a href="index.html">بازگشت به فهرست مقالات</a></center></body>
+</html>

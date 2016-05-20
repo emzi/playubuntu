@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir.woff') format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Vazir';
+    src: url('../fonts/Vazir-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Droid Arabic Naskh';
+	src: url('../fonts/DroidNaskh-Regular.ttf');
+        font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Droid Arabic Naskh';
+	src: url('../fonts/DroidNaskh-Bold.ttf');
+        font-weight: bold;
+}
+
+
+body, .pure-g [class*="pure-u"] {
+    font-family: 'vazir', 'Droid Arabic Naskh', 'Iranian Sans', 'Ubuntu';
+}
+
+h1, h2, h3 {
+    font-family: 'Droid Arabic Naskh', 'Iranian Sans', 'Ubuntu', 'DejaVu Sans', 'Tahoma';
+}
+
+h2, h3 {
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+body {
+    direction: rtl;
+    background-color: #D4D2CF;
+}
+
+.pricing-table-list li {
+    background-color: beige;
+}
+
+.pricing-table-free .pricing-table-header {
+    background: #DD4814;
+}
+
+.pricing-table-biz .pricing-table-header {
+    background: #519251;
+}
+
+.pricing-table-price {
+    font-size: 4em;
+}
+
+.banner {
+    height: 185px;
+}
+
+.pure-menu-heading {
+    padding: 0em 1em;
+}
+
+/*Borderless*/
+.pricing-table {
+    border: none;
+}
+
+.pricing-table-font-color {
+    color: black;
+}
+
+.pure-u-md-1-3 {
+    width: 33.33%;
+}
+
+.pure-u-md-1-2 {
+    width: 49.99%;
+}

@@ -1,0 +1,119 @@
+<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script>
+
+function ch_bgcolor(c) {
+document.body.style.background=c;
+}
+
+function ch_fgcolor(c) {
+document.body.style.color=c;
+}
+
+function ch_size(i) {
+switch(i.selectedIndex) {
+case 0:
+document.body.style.fontSize='medium';
+i.style.fontSize='medium';
+break;
+case 1:
+document.body.style.fontSize='large';
+i.style.fontSize='large';
+break;
+case 2:
+document.body.style.fontSize='x-large';
+i.style.fontSize='x-large';
+break;
+case 3:
+document.body.style.fontSize='small';
+i.style.fontSize='small';
+break;
+}
+i.blur();
+}
+
+</script>
+<style>
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/Pfont-Regular.ttf');
+    font-weight: normal;
+    font-style: normal
+}
+body {
+font-family: 'pfont';
+}
+.col {
+border: 1px solid #000;
+text-decoration: none;
+}
+.col_box {
+border: 1px solid #000;
+color: #000;
+background: #bbb;
+padding-top: 3px;
+padding-bottom: 3px;
+text-align: center;
+}
+</style>
+</head>
+<body dir="rtl" style="background: #fff; color: #000">
+<div  class="col_box">
+درشتی متن:
+<select onchange="ch_size(this);">
+<option>
+معمولی
+<option>
+درشت
+<option>
+خیلی درشت
+<option>
+کوچک
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+رنگ متن: 
+<a href="javascript:void(0);" class="col" style="background: #153089;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #892C14;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #ffffff;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #000000;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+رنگ زمینه: 
+<a href="javascript:void(0);" class="col" style="background: #FFDA99;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #CCF0FF;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #F4FFD9;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #F3E5FF;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #999999;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #ffffff;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #000000;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html">بازگشت&nbsp;به&nbsp;فهرست&nbsp;مقالات</a>
+</div>
+<h2 align="center">
+ آیا مایکروسافت شیطان بزرگ است؟ 
+</h2>
+<br />
+ما (جنبش نرم افزار آزاد) می‌بینیم که مایکروسافت دارد چیزی را انجام می‌دهد که برای کاربران نرم‌افزار بد است: انحصاری کردن نرم افزار و بنابراین سلب آزادی مشروع کاربران از آن‌ها.<br />
+<br />
+اما مایکروسافت در این تنها نیست؛ تقریبا تمام کمپانی‌های نرم‌افزاری چیز یکسانی را نسبت به کاربران انجام می‌دهند. اگر کمپانی‌های دیگر اقدام به اعمال تسلط بر کاربران کم‌تری نسبت به مایکروسافت می‌کنند، آن بخاطر کم بودن تلاش در این زمینه نیست.<br />
+<br />
+این برای عذرخواهی مایکروسافت درنظر گرفته نشده است. بلکه، بعنوان یک یادآوری از اینکه مایکروسافت توسعهٔ طبیعی یک صنعت نرم افزار است که بر اساس متفرق کردن کاربران و زدودن آزادی آنان بنا شده است می‌باشد (<a href="http://www.gnu.org/philosophy/shouldbefree.html" target="_blank">http://www.gnu.org/philosophy/shouldbefree.html</a>). در هنگام انتقاد کردن از مایکروسافت، ما نباید کمپانیهای دیگر را نیز که نرم افزار انحصاری تولید می‌کنند مبرا کنیم. در FSF (م: بنیاد نرم افزار آزاد - Free Software Foundation)، ما هیچ نرم افزار انحصاری ای را استفاده نمی‌کنیم — نه از مایکروسافت یا هر کس دیگری.<br />
+<br />
+در اسناد هالووین (Halloween documents - م: مطالب درز پیدا کرده‌ای از استراتژی‌های شرکت مایکروسافت از داخل آن شرکت)، منتشر شده در پایان اکتبر ۱۹۹۸، مدیران مایکروسافت قصدی برای استفادهٔ روش‌های مختلف برای مانع ایجاد کردن دربرابر توسعهٔ نرم افزار آزاد را اظهار کردند: بخصوص، طراحی پروتکلها و فرمتهای فایل سری ، و Patent (م: حق انحصاری ایده - بطور مثال حق انحصار اختراع نیز Patent است) کردن الگوریتم‌ها و خصیصه‌های (features) نرم افزار.<br />
+<br />
+این سیاستهای مانع تراشانه هیچ چیز جدیدی نیستند: مایکروسافت، و بسیاری کمپانیهای نرم افزار دیگر، سالها تاکنون در حال انجام آنها بوده اند. در گذشته، احتمالا، انگیزهٔ آنها حمله به یکدیگر بود؛ اکنون، بنظر میرسد، ما در میان اهداف مورد نظر هستیم. اما آن تغییر در انگیزه پیامد عملی ای ندارد، زیرا پیمانهای سری و Patent های نرم افزاری مانع همه کس میشوند، صرفنظر از «هدف مورد نظر».<br />
+<br />
+مخفی کاری و Patent ها نرم افزار آزاد را تهدید می‌کنند. آن‌ها در گذشته بسیار مانع ما شده‌اند، و ما باید انتظار داشته باشیم که آن‌ها در آینده حتی بیشتر چنین کنند. اما این تفاوتی با آنچه ندارد که اگر مایکروسافت هیچ‌گاه ما را آگاه نکرده بود اتفاق می‌افتاد. تنها اهمیت واقعی «اسناد هالووین» این است که مایکروسافت بنظر می‌رسد که فکر می‌کند که سیستم گنو/لینوکس (<a href="http://www.gnu.org/gnu/linux-and-gnu.html" target="_blank">http://www.gnu.org/gnu/linux-and-gnu.html</a>) پتانسیل برای موفقیت بزرگ را دارد. <br />
+<br />
+متشکریم، مایکروسافت، و لطفا از راه کنار برو.<br />
+<br />
+<br />
+-------------------------------<br />
+<br />
+کپی رایت ۱۹۹۷، ۱۹۹۸، ۱۹۹۹، ۲۰۰۰، ۲۰۰۷ بنیاد نرم افزار آزاد، Inc.<br />
+<br />
+کپی و توزیع لفظ به لفظ از تمامی این مقاله درسراسر جهان اجازه داده شده است، بدون حق التالیف، در هر رسانه ای، با شرط اینکه این اعلان، و اعلان کپی رایت، حفظ شده باشند.<br />
+<br />
+به روز آوری: 2007/06/19 00:02:59<br />
+<center><a href="index.html">بازگشت به فهرست مقالات</a></center></body>
+</html>

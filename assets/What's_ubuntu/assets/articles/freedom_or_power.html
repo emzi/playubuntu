@@ -1,0 +1,128 @@
+<html dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script>
+
+function ch_bgcolor(c) {
+document.body.style.background=c;
+}
+
+function ch_fgcolor(c) {
+document.body.style.color=c;
+}
+
+function ch_size(i) {
+switch(i.selectedIndex) {
+case 0:
+document.body.style.fontSize='medium';
+i.style.fontSize='medium';
+break;
+case 1:
+document.body.style.fontSize='large';
+i.style.fontSize='large';
+break;
+case 2:
+document.body.style.fontSize='x-large';
+i.style.fontSize='x-large';
+break;
+case 3:
+document.body.style.fontSize='small';
+i.style.fontSize='small';
+break;
+}
+i.blur();
+}
+
+</script>
+<style>
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/Pfont-Regular.ttf');
+    font-weight: normal;
+    font-style: normal
+}
+body {
+font-family: 'pfont';
+}
+.col {
+border: 1px solid #000;
+text-decoration: none;
+}
+.col_box {
+border: 1px solid #000;
+color: #000;
+background: #bbb;
+padding-top: 3px;
+padding-bottom: 3px;
+text-align: center;
+}
+</style>
+</head>
+<body dir="rtl" style="background: #fff; color: #000">
+<div  class="col_box">
+درشتی متن:
+<select onchange="ch_size(this);">
+<option>
+معمولی
+<option>
+درشت
+<option>
+خیلی درشت
+<option>
+کوچک
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+رنگ متن: 
+<a href="javascript:void(0);" class="col" style="background: #153089;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #892C14;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #ffffff;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #000000;" onclick="ch_fgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+رنگ زمینه: 
+<a href="javascript:void(0);" class="col" style="background: #FFDA99;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #CCF0FF;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #F4FFD9;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #F3E5FF;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #999999;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #ffffff;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+<a href="javascript:void(0);" class="col" style="background: #000000;" onclick="ch_bgcolor(this.style.backgroundColor);">&nbsp;&nbsp;&nbsp;</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="index.html">بازگشت&nbsp;به&nbsp;فهرست&nbsp;مقالات</a>
+</div>
+<h2 align="center">
+-= آزادی یا قدرت؟ =-
+</h2>
+بوسیلهٔ Bradley M. Kuhn و Richard M. Stallman<br />
+<br />
+«عشق به آزادی عشق به دیگران است؛ عشق به قدرت عشق به خودمان است.» William Hazlitt<br />
+<br />
+در جنبش نرم افزار آزاد، ما برای آزادی کاربران نرم افزار می ایستیم. ما دیدگاههای خود را با نگاه به اینکه چه آزادیهایی برای یک راه خوب زندگی ضروری هستند فرموله کرده ایم، و اجازه میدهیم برنامه های مفید جامعه ای از خوش نیتی، همکاری، و حمایت را سر و سامان دهند. معیارهای ما برای نرم افزار آزاد آزادیهایی را مشخص میکنند که کاربران یک برنامه نیاز دارند تا بتوانند در یک جامعه همکاری کنند.<br />
+<br />
+ما علاوه بر آزادی برای برنامه نویسان برای کاربران دیگر می ایستیم. بیشتر ما برنامه نویس هستیم، و ما آزادی را علاوه بر برای خودمان برای شما میخواهیم. اما هر یک از ما نرم افزار نوشته شده توسط دیگران را استفاده میکند، و ما موقع استفاده کردن از آن برنامه آزادی میخواهیم، نه فقط هنگام استفاده کردن از کد خودمان. ما برای آزادی برای همهٔ کاربران می ایستیم، خواه آنها اغلب برنامه مینویسند، گهگاه، یا به هیچ وجه.<br />
+<br />
+هرچند، یک مورد آزادی نامیده شده ای که ما حمایت نمیکنیم «آزادی برای انتخاب هر مجوزی که شما برای نرم افزاری که مینویسید میخواهید» است. ما اینرا نمی پذیریم زیرا آن درواقع یک شکل از قدرت است، نه یک آزادی.<br />
+<br />
+این تفاوت اغلب مورد چشم پوشی واقع شده، پایه ای است. آزادی قادر بودن به گرفتن تصمیماتی است که بطور عمده شما را تحت تاثیر قرار میدهند. قدرت قادر بودن به گرفتن تصمیماتی است که افراد دیگری را بیش از شما تحت تاثیر قرار میدهند. اگر ما قدرت را با آزادی اشتباه بگیریم، ما در حمایت آزادی حقیقی شکست خواهیم خورد.<br />
+<br />
+نرم افزار انحصاری یک بکارگرفتن قدرت است. قانون کپی رایت امروز به توسعه دهندگان نرم افزار آن قدرت را اعطا میکند، چنانکه آنها و فقط آنها قوانین را برای تحمیل کردن بر هرکس دیگر انتخاب میکنند — یک عدهٔ نسبتا معدود تصمیمات نرم افزاری پایه را برای همه کس تعیین میکنند، نوعا بوسیلهٔ رد کردن آزادی آنها. وقتی کاربران آزادیهایی را که نرم افزار آزاد را تعریف میکنند ندارند، آنها نمیتوانند مطلع شوند نرم افزار درحال انجام دادن چه چیزی است، نمیتوانند وجود درهای پشتی را چک کنند، نمیتوانند ویروسها و کرمهای ممکن را تحت نظر بگیرند، نمیتوانند دریابند چه اطلاعات شخصی ای درحال گزارش شدن است (یا گزارشها را متوقف کنند، حتی اگر دریابند). اگر آن خراب شود، آنها نمیتوانند آنرا درست کنند؛ آنها مجبورند صبر کنند تا توسعه دهنده قدرتش را برای انجام آن بکار بگیرد. اگر آن بسادگی تمام چیزی نباشد که آنها نیاز دارند، آنها بوسیلهٔ آن گیر میکنند. آنها نمیتوانند به یکدیگر برای بهبود دادن آن کمک کنند.<br />
+<br />
+توسعه دهندگان نرم افزار انحصاری اغلب تجارت ها هستند. ما در جنبش نرم افزار آزاد با تجارت مخالف نیستیم، اما ما دیده ایم وقتیکه یک تجارت نرم افزاری «آزادی» برای تحمیل قوانین دلخواه بر روی کاربران نرم افزار را دارد چه رخ میدهد. میکروسافت یک مثال فاحش از این است که چگونه رد کردن آزادیهای کاربران میتواند به آسیب مستقیم منجر شود، اما آن تنها مثال نیست. حتی وقتیکه انحصاری (monopoly - م: تک قطبی بودن) وجود ندارد، نرم افزار انحصاری (proprietary software) به جامعه صدمه میزند. انتخابی از اربابها آزادی نیست.<br />
+<br />
+بحثهای حقوق و قوانین برای نرم افزار اغلب روی منافع برنامه نویسان به تنهایی متمرکز شده اند. افراد معدودی در جهان بطور مرتب برنامه مینویسند، و تعداد کمتری هنوز مالکان تجارت های نرم افزار انحصاری هستند. اما تمام جهان توسعه یافته اکنون نرم افزار را نیاز دارد و استفاده میکند، بنابراین توسعه دهندگان نرم افزار اکنون راهی را که جهان زندگی میکند، تجارت میکند، تبادل اطلاعات میکند و سرگرم کننده است را کنترل میکنند. مسایل اخلاقی و سیاسی با شعار «آزادی انتخاب (تنها برای توسعه دهندگان)» حل شده نیستد.<br />
+<br />
+اگر کد قانون است، آنطور که پروفسور Lawrence Lessig (از دانشگاه قانون استنفورد) اظهار کرده است، سپس پرسش واقعی ای که رودرروی ما قرار دارد این است که: چه کسی باید کدی را که شما استفاده میکنید کنترل کند — شما، یا یک عدهٔ معدودی نخبه؟ ما اعتقاد داریم که شما مستحق کنترل نرم افزاری هستید که شما استفاده میکنید، و دادن آن کنترل به شما هدف نرم افزار آزاد است.<br />
+<br />
+ما اعتقاد داریم که شما باید تصمیم بگیرید با نرم افزاری که استفاده میکنید چه کنید؛ هرچند، آن چیزی نیست که قانون امروزی میگوید. قانون کپی رایت فعلی ما را در جایگاه قدرت بر استفاده کنندگان از کد ما قرار میدهد، خواه ما آنرا دوست داشته باشیم یا نه. پاسخ اخلاقی به این شرایط اعلام کردن آزادی برای هر کاربر است، دقیقا همانطور که لایحهٔ حقوق (Bill of Rights) برای بکار گرفتن قدرت حکومت بوسیلهٔ تضمین کردن آزادیهای هر شهروند درنظر گرفته شده بود. آن چیزی است که GNU GPL (ا <a href="http://www.gnu.org/copyleft/copyleft.html" target="_blank">http://www.gnu.org/copyleft/copyleft.html</a>) برای آنست: آن شما را در مقام کنترل استفادهٔ شما از نرم افزار قرار میدهد، درحالیکه شما را از دیگرانی که دوست خواهند داشت تصمیمات شما را کنترل کنند محافظت میکند (<a href="http://www.gnu.org/philosophy/why-copyleft.html" target="_blank">http://www.gnu.org/philosophy/why-copyleft.html</a>).<br />
+<br />
+همچنانکه کاربران بیشتر و بیشتری درمیابند که کد قانون است، و به این احساس میرسند که آنها همچنین سزاوار آزادی هستند، آنها اهمیت آزادیهایی را که ما برایشان ایستاده ایم خواهند دید، همچنانکه کاربران بیشتر و بیشتری به قدر دانستن ارزش عملی نرم افزار آزادی که ما توسعه داده ایم میرسند.<br />
+<br />
+این مقاله در «نرم افزار آزاد، جامعهٔ آزاد: مقالات منتخب از ریچارد ام استالمن» (<a href="http://www.gnu.org/doc/book13.html" target="_blank">http://www.gnu.org/doc/book13.html</a>) منتشر شده است.<br />
+<br />
+-----------------------------------------<br />
+<br />
+کپی رایت ۲۰۰۱ - Bradley M. Kuhn و Richard M. Stallman<br />
+کپی لفظ به لفظ و توزیع تمامی این مقاله بدون حق التالیف در هر رسانه ای  اجازه داده شده است، با شرط اینکه این اعلان حفظ شده باشد.<br />
+<br />
+بروزآوری: 2007/06/19 00:03:00<br />
+<center><a href="index.html">بازگشت به فهرست مقالات</a></center></body>
+</html>
