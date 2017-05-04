@@ -13,3 +13,14 @@
 body { direction: rtl;
     font-family: 'vazir';
 }
+
+.header-boxs {
+	font-size: 1.4rem;
+}
+
+@media (max-width: 650px) {
+    .header-boxs li {
+        height: 5rem;
+        line-height: 5rem;
+    }
+}
